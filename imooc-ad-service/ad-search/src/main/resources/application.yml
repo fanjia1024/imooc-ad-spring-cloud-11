@@ -16,7 +16,7 @@ spring:
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/imooc_ad_data?autoReconnect=true
     username: root
-    password: 123456
+    password: 12345678
     tomcat:
       max-active: 4
       min-idle: 2
@@ -41,14 +41,14 @@ management:
       exposure:
         include: "*"
 
-#adconf:
-#  mysql:
-#    host: 127.0.0.1
-#    port: 3306
-#    username: root
-#    password: Djangobbs
-#    binlogName: binlog.000038
-#    position: 60451
+adconf:
+  mysql:
+    host: 127.0.0.1
+    port: 3306
+    username: root
+    password: 12345678
+    binlogName: ""
+    position: -1
 #
 #  kafka:
 #    topic: ad-search-mysql-data

@@ -7,7 +7,9 @@ import com.github.shyiko.mysql.binlog.event.UpdateRowsEventData;
 import com.github.shyiko.mysql.binlog.event.WriteRowsEventData;
 
 /**
- * Created by Qinyi.
+ * Created by fanjia.
+ * mysql的binlog中的binlog_format 慎用mixed模式，
+ * 因为在此模式下很多的binlog日志记录不准确。
  */
 public class BinlogServiceTest {
 
@@ -39,7 +41,7 @@ public class BinlogServiceTest {
                 "127.0.0.1",
                 3306,
                 "root",
-                "123456"
+                "12345678"
         );
 //        client.setBinlogFilename("binlog.000037");
 //        client.setBinlogPosition();
